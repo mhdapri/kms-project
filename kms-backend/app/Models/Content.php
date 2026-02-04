@@ -12,10 +12,17 @@ class Content extends Model
         'user_id',
         'title',
         'body',
+        'category',
         'status',
         'published_at',
         'approved_by',
         'note_project',
+    ];
+
+    protected $casts = [
+        'published_at' => 'datetime',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
     ];
 
     public function app()

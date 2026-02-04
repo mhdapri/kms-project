@@ -36,8 +36,8 @@ export function KnowledgeProvider({ children }) {
       prev.map((k) =>
         k.id === id
           ? { ...k, ...updated, updatedAt: new Date().toISOString() }
-          : k
-      )
+          : k,
+      ),
     );
   };
 
