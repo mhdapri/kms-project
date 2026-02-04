@@ -1,0 +1,297 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.login-card {
+  background: #ffffff;
+  width: 380px;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-card input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.2);
+}
+
+.login-card button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #0f766e;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-card button:hover {
+  background: #115e59;
+}
+
+.login-hint {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #374151;
+  text-align: left;
+}
+.public-hero {
+  background: linear-gradient(135deg, #064e4b 0%, #0f766e 45%, #14b8a6 100%);
+}
+.public-hero {
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 60%, #2dd4bf 100%);
+}
+.public-hero {
+  background: linear-gradient(135deg, #042f2e 0%, #0f766e 70%, #134e4a 100%);
+}
+.public-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* WRAPPER */
+.login-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* CARD */
+.login-card {
+  background: #ffffff;
+  width: 380px;
+  padding: 36px 32px;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+/* TITLE */
+.login-card h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f766e;
+  text-align: center;
+}
+
+.login-card .subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+/* FORM */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-card label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.login-card input {
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.2);
+}
+
+/* BUTTON */
+.login-card button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #0f766e;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-card button:hover {
+  background: #115e59;
+  transform: translateY(-1px);
+}
+
+.login-card button:active {
+  transform: scale(0.98);
+}
+
+/* HINT */
+.login-hint {
+  margin-top: 20px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+/* GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* LABEL RATA KIRI */
+.form-group label {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* INPUT TETAP RAPI */
+.form-group input {
+  width: 100%;
+}
+/* pastikan semua elemen hitung width + padding */
+.login-card,
+.login-card * {
+  box-sizing: border-box;
+}
+
+/* GROUP */
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* LABEL */
+.form-group label {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* INPUT FULL WIDTH */
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+/* BUTTON FULL WIDTH (SAMA DENGAN INPUT) */
+.login-card button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: #0f766e;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* ===============================
+   LOGIN TITLE ANIMATION FIX
+================================ */
+
+/* MASUK SEKALI */
+@keyframes titleEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BOUNCE HALUS TERUS */
+@keyframes softBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* GLOW */
+@keyframes softGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 12px rgba(15, 118, 110, 0.25);
+  }
+  50% {
+    text-shadow: 0 0 22px rgba(15, 118, 110, 0.45);
+  }
+}
+
+/* TITLE */
+.login-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f766e;
+  text-align: center;
+  margin-bottom: 6px;
+
+  /* 2 ANIMASI BERURUT */
+  animation: titleEnter 1s ease-out forwards,
+    softBounce 2.5s ease-in-out infinite, softGlow 3s ease-in-out infinite;
+
+  animation-delay: 0s, 1s, 0s;
+}

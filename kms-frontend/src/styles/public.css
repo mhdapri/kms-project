@@ -1,0 +1,251 @@
+:root {
+  --primary: #0f766e;
+  --primary-dark: #115e59;
+  --primary-soft: #14b8a6;
+  --bg-soft: #f0fdfa;
+  --text-dark: #134e4a;
+}
+
+/* =====================
+   GLOBAL
+===================== */
+.public-container {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg-soft);
+  min-height: 100vh;
+}
+
+/* =====================
+   HERO
+===================== */
+.public-hero {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: 80px 20px 70px;
+  text-align: center;
+  color: white;
+}
+
+.public-hero h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.public-hero p {
+  font-size: 15px;
+  opacity: 0.9;
+  margin-bottom: 28px;
+}
+
+.public-hero input {
+  width: 420px;
+  max-width: 90%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 2px solid var(--primary-soft);
+  outline: none;
+  font-size: 14px;
+}
+
+.public-hero input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.35);
+}
+
+/* =====================
+   CATEGORY FILTER
+===================== */
+.category-filter {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-filter button {
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--primary-soft);
+  background: white;
+  color: var(--text-dark);
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.category-filter button:hover {
+  background: var(--primary-soft);
+  color: white;
+}
+
+.category-filter .active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* =====================
+   GAMBARAN UMUM
+===================== */
+.overview-section {
+  padding: 64px 24px;
+}
+
+.overview-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 18px;
+  padding: 42px 48px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.overview-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.overview-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+/* =====================
+   GRID KNOWLEDGE
+===================== */
+.public-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px 48px 20px;
+}
+
+/* =====================
+   CARD KNOWLEDGE
+===================== */
+.public-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border-top: 5px solid var(--primary);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.public-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-thumb {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 18px;
+}
+
+.card-category {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-body h3 {
+  margin: 8px 0 6px;
+  font-size: 16px;
+  color: #111;
+}
+
+.card-content {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.public-card iframe {
+  width: 100%;
+  height: 180px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* =====================
+   EMPTY STATE
+===================== */
+.empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-dark);
+  opacity: 0.7;
+  padding: 60px 0;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.public-footer {
+  text-align: center;
+  padding: 28px 16px;
+  color: var(--primary-dark);
+  opacity: 0.75;
+  font-size: 14px;
+}
+/* SEARCH IMPROVEMENT */
+.public-hero input {
+  height: 48px;
+  font-size: 15px;
+  padding: 0 18px;
+  border-radius: 12px;
+}
+.publish-section {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.datetime-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.datetime-input input {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.date-preview {
+  margin-top: 12px;
+  padding: 12px;
+  background: #0f766e;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+}
